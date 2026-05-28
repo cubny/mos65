@@ -6,17 +6,8 @@ Type assembly, hit `Ctrl+A` to assemble, `Ctrl+R` to run. The 32×32 screen
 at `$0200–$05FF` renders as half-block characters in a real TUI: snake,
 breakout, and the other classic 6502asm.com demos work as you'd expect.
 
-```
-╭─ editor ──────────────────────╮ ╭─ screen ───────────────╮
-│  1  define appleL    $00      │ │                        │
-│  2  define snakeL    $10      │ │      ▀  ▀▀             │
-│  3                            │ │            ▀           │
-│  4  start:                    │ │                        │
-│  5    LDA #$01                │ ╰────────────────────────╯
-│  6    STA $0200               │ ╭─ debugger ─────────────╮
-│  …                            │ │ A=$01 X=$04 Y=$00      │
-╰───────────────────────────────╯ ╰────────────────────────╯
-```
+<img width="800" height="640" alt="mos65" src="https://github.com/user-attachments/assets/a8dbe5e0-21a9-4d6b-b2cc-874b45ab0d83" />
+
 
 ## Install
 
