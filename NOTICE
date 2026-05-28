@@ -1,0 +1,27 @@
+mos65
+Copyright (C) 2026 Alireza Eliaderani
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your
+option) any later version. See the LICENSE file for the full text.
+
+────────────────────────────────────────────────────────────────────────
+Provenance
+────────────────────────────────────────────────────────────────────────
+
+mos65 is a Go port of the 6502 assembler / simulator originally written
+in JavaScript as `6502asm.com` by Stian Soreng (©2006–2010) and later
+adapted by Nick Morgan as the `skilldrick/6502js` web app
+(https://github.com/skilldrick/6502js).
+
+The 6502 instruction set semantics, the assembler grammar (label syntax,
+`define`, `DCB`, `*=` origin, `#<label` / `#>label`, addressing modes),
+the memory-mapped screen at $0200–$05FF using the 16-colour palette,
+the random-byte source at $FE and keyboard input at $FF, and the
+behaviour of the included `testdata/snake.asm` program all derive from
+those upstream projects.
+
+Both upstream projects are licensed under the GNU General Public License
+version 3. As a derivative work, mos65 is therefore released under the
+same licence.
